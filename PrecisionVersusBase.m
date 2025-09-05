@@ -1,11 +1,12 @@
 
 
-function [precision] = PrecisionVersusBase( base ) % returns precision
+function [precision] = PrecisionVersusBase( BaseValue ) % returns precision
 
 
-precision = base; % Start precision here
-while( base + precision > base ) % continue until precision has no
+PrecisionValue = BaseValue; % Start precision here
+while( BaseValue + PrecisionValue > BaseValue ) % continue until precision has no
 % effect on base.
-precision = precision / 2; % make precision smaller.
+PrecisionValue = PrecisionValue / 2; % make precision smaller.
 end
-precision = precision * 2; % Move back on ste
+PrecsionValue = PrecisionValue * 2; % Move back on ste
+
